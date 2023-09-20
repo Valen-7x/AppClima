@@ -35,8 +35,18 @@ function App() {
   }, [search]);
 
   return (
-    < div className='bg-cyan-600 w-[100%] h-[100vh]'>
-      <div className="max-w-xl py-[2rem] mx-auto px-4 text-center">
+    <div className='bg-cyan-600 w-full min-h-screen relative'>
+      <div className="absolute inset-0">
+        <video
+          src="public\icons\06_1596083776.mp4" // Ruta al video en la carpeta pública
+          autoPlay
+          loop
+          muted
+          className="w-full h-full object-cover absolute inset-0 z-0"
+        />
+      </div>
+
+      <div className="relative z-10 max-w-xl py-[2rem] mx-auto px-4 text-center">
         <h2 className="text-2xl font-bold">Clima <br /> Ingrese su Ciudad </h2>
         <div className="mt-4">
           <input
@@ -48,7 +58,7 @@ function App() {
         </div>
       </div>
 
-      <div className="w-[15rem] md:w-[20rem] mx-auto  bg-white shadow-md rounded-3xl">
+      <div className="relative z-10 w-[15rem] md:w-[20rem] mx-auto  bg-white shadow-md rounded-3xl">
         {values ? (
           <div className="text-center">
             <h1 className="text-2xl text-gray-700 font-bold">{values.name}</h1>
