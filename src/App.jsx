@@ -37,7 +37,7 @@ function App() {
   return (
     < div className='bg-cyan-600 w-[100%] h-[100vh]'>
       <div className="max-w-xl py-[2rem] mx-auto px-4 text-center">
-        <h2 className="text-2xl font-bold">App del Clima <br /> Ingresa tu Ciudad </h2>
+        <h2 className="text-2xl font-bold">Clima <br /> Ingrese su Ciudad </h2>
         <div className="mt-4">
           <input
             onKeyDown={handleSearch}
