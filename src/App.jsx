@@ -53,7 +53,11 @@ function App() {
           <div className="text-center">
             <h1 className="text-2xl text-gray-700 font-bold">{values.name}</h1>
             <div className='flex  items-center px-[2rem]'>
+           <div className='flex flex-col items-center'>
             <p className="text-4xl font-bold">{values.main.temp.toFixed(0)}&deg;</p>
+            <p className='ml-[1rem] flex text-lg font-bold items-center'>  {values.main.humidity} <img src="public\icons\humidity.svg" className='w-[2.5rem]' alt="" /></p>
+            <p className='ml-[1rem] flex text-lg font-bold items-center'>{values.wind.speed.toFixed(0)}km/h <img src="public\icons\wind.svg" className='w-[2.5rem]' alt="" /></p>
+            </div>
             <img
               className="mx-auto mt-4 w-[7rem] md:w-[10rem]"
               src={Icons(icon)}
