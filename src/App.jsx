@@ -38,7 +38,7 @@ function App() {
     <div className='bg-cyan-900 w-full min-h-screen relative'>
       <div className="absolute inset-0">
         <video
-          src="/icons/06_1596083776.mp4" // Ruta al video en la carpeta pública
+          src="src\assets\icons\06_1596083776.mp4" // Ruta al video en la carpeta pública
           autoPlay
           loop
           muted
@@ -65,8 +65,8 @@ function App() {
             <div className='flex  items-center px-[2rem]'>
            <div className='flex flex-col items-center'>
             <p className="text-4xl font-bold">{values.main.temp.toFixed(0)}&deg;</p>
-            <div className='flex'><p className='ml-[1rem] flex text-lg font-bold items-center'>  {values.main.humidity}</p> <img src="/icons/humidity.svg" className='w-[2.5rem]' alt="" /></div>
-            <div className='flex'><p className='ml-[1rem] flex text-lg font-bold items-center'>{values.wind.speed.toFixed(0)}km/h</p> <img src="/icons/wind.svg" className='w-[2.5rem]' alt="" /></div>
+            <div className='flex'><p className='ml-[1rem] flex text-lg font-bold items-center'>  {values.main.humidity}</p> <img src="src\assets\icons\humidity.svg" className='w-[2.5rem]' alt="" /></div>
+            <div className='flex'><p className='ml-[1rem] flex text-lg font-bold items-center'>{values.wind.speed.toFixed(0)}km/h</p> <img src="src\assets\icons\wind.svg" className='w-[2.5rem]' alt="" /></div>
             </div>
             <img
               className="mx-auto mt-4 w-[7rem] md:w-[10rem]"
@@ -82,7 +82,7 @@ function App() {
             </div>
           </div>
         ) : (
-          <h1 className="text-2xl font-bold">{"City not found"}</h1>
+          <h1 className="text-2xl font-bold">{"Cargando"}</h1>
         )}
       </div>
     </div>
